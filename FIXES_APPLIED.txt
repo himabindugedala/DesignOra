@@ -1,0 +1,21 @@
+Campus Celebration Hall - Authentication Fixes
+
+Implemented:
+1. Splash now opens Login for unauthenticated users.
+2. Registration saves student data locally using SharedPreferences.
+3. Login uses Registration Number + Phone Number.
+4. New registrations start as Waiting for Mentor Approval.
+5. Added local Demo: Mentor Approves flow.
+6. Approved students can enter Home and remain logged in after app restart.
+7. Logout clears the local login session.
+8. Removed Male/Female demo switching from Home/Profile.
+9. Removed Rahul/Ananya demo students from the active authentication list.
+10. Existing booking, room, pricing and navigation code was preserved.
+11. Added student approval status persistence.
+12. Updated the booking logic test for the new authenticated flow.
+
+Before first run:
+flutter pub get
+flutter analyze
+flutter test
+flutter run -d chrome
